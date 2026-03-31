@@ -18,7 +18,7 @@
 
 body {
   font-family: Carlito, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   color: var(--text);
   background: #e8e8e8;
   padding: 24px 16px;
@@ -40,7 +40,7 @@ header {
 
 h1 {
   color: var(--primary);
-  font-size: 28px;
+  font-size: 30px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -70,7 +70,7 @@ section {
 }
 
 h2 {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   color: var(--primary);
   text-transform: uppercase;
@@ -81,7 +81,7 @@ h3 {
   color: var(--text);
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 13px;
   gap: 10px;
 }
 

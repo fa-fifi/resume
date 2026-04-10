@@ -98,11 +98,24 @@ li + li {
   background: #fff;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
   margin: auto;
-  max-width: var(--page-w);
-  max-height: var(--page-h);
+  width: var(--page-w);
+  height: var(--page-h);
   overflow: hidden;
   padding: 20px 36px;
   text-overflow: ellipsis;
+}
+
+.accordion {
+  cursor: pointer;
+}
+
+.accordion::after {
+  content: "\002B";
+  float: right;
+}
+
+.active::after {
+  content: "\2212";
 }
 
 @media print {

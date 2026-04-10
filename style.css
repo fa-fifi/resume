@@ -72,7 +72,7 @@ a {
   color: var(--text);
   display: inline-block;
   text-decoration: none;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
 a:hover {
@@ -94,6 +94,21 @@ li + li {
   margin-top: 1px;
 }
 
+.accordion {
+  cursor: pointer;
+}
+
+.accordion::after {
+  content: "\2303";
+  float: right;
+  rotate: 180deg;
+  transition: transform 0.3s ease-in-out;
+}
+
+.active::after {
+  transform: rotate(180deg);
+}
+
 .page {
   background: #fff;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
@@ -105,21 +120,12 @@ li + li {
   text-overflow: ellipsis;
 }
 
-.accordion {
-  cursor: pointer;
-}
-
-.accordion::after {
-  content: "\002B";
-  float: right;
-}
-
-.active::after {
-  content: "\2212";
-}
-
 @media print {
   body {
     padding: 0;
+  }
+
+  .accordion::after {
+    display: none;
   }
 }

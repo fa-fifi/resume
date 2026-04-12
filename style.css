@@ -9,12 +9,11 @@
 }
 
 :root {
-  --primary: #1e62cb;
-  --text: #000;
-  --inverted-text: #fff;
-  --background: #fff;
-  --dark-background: #000;
-  --divider: #d0d0d0;
+  --primary: royalblue;
+  --text: black;
+  --inverted-text: white;
+  --background: white;
+  --divider: gainsboro;
   --font-size: 13px;
   --horizontal-padding: 36px;
   --vertical-padding: 20px;
@@ -32,6 +31,14 @@ body {
   line-height: 1.3;
   min-height: 100vh;
   padding: 24px;
+}
+
+body.dark {
+  --primary: goldenrod;
+  --text: whitesmoke;
+  --inverted-text: black;
+  --background: #16213e;
+  --divider: #0f3460;
 }
 
 header {
@@ -104,6 +111,7 @@ button {
   background: transparent;
   border: 1px solid var(--divider);
   border-radius: 50%;
+  color: var(--text);
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
@@ -182,6 +190,8 @@ button:hover {
 @media print {
   body {
     padding: 0;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact; /* Chrome, Safari, Edge */
   }
 
   .accordion::after {

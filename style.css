@@ -69,7 +69,7 @@ h3 {
   color: var(--text);
   display: flex;
   font-size: var(--font-size);
-  gap: 10px;
+  gap: 2px;
   justify-content: space-between;
 }
 
@@ -150,16 +150,33 @@ button:hover {
   background: var(--background);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
   margin: auto;
-  width: var(--page-width);
-  height: var(--page-height);
-  overflow: hidden;
+  min-height: var(--page-height);
   padding: var(--vertical-padding) var(--horizontal-padding);
   position: relative;
-  text-overflow: ellipsis;
+  width: var(--page-width);
 }
 
 #redirect {
   display: none;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --horizontal-padding: 18px;
+    --vertical-padding: 10px;
+  }
+
+  header {
+    padding-top: 41px;
+  }
+
+  h3 {
+    flex-direction: column;
+  }
+
+  h3 span:last-child {
+    color: gray;
+  }
 }
 
 @media print {

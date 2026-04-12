@@ -1,7 +1,7 @@
-var acc = document.getElementsByClassName("accordion");
+var accordions = document.getElementsByClassName("accordion");
 
-for (var i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
+for (var i = 0; i < accordions.length; i++) {
+  accordions[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     while (panel) {
@@ -10,3 +10,7 @@ for (var i = 0; i < acc.length; i++) {
     }
   });
 }
+
+document.getElementById("print").onclick = function () {
+  window.print();
+};

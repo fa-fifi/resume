@@ -158,6 +158,10 @@ button:hover {
   text-overflow: ellipsis;
 }
 
+#redirect {
+  display: none;
+}
+
 @media print {
   body {
     padding: 0;
@@ -169,5 +173,9 @@ button:hover {
 
   #print {
     display: none;
+  }
+
+  #redirect {
+    display: block;
   }
 }

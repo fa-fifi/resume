@@ -170,8 +170,8 @@ button:hover {
 
 @media (max-width: 600px) {
   :root {
-    --horizontal-padding: 18px;
-    --vertical-padding: 10px;
+    --horizontal-padding: 24px;
+    --vertical-padding: 16px;
   }
 
   header {
@@ -189,6 +189,7 @@ button:hover {
 
 @media print {
   body {
+    background: white;
     padding: 0;
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact; /* Chrome, Safari, Edge */
@@ -204,5 +205,9 @@ button:hover {
 
   #redirect {
     display: block;
+  }
+
+  .page {
+    box-shadow: none;
   }
 }

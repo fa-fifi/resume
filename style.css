@@ -73,7 +73,6 @@ h1 {
 h2 {
   color: var(--primary);
   font-size: var(--font-size);
-  font-weight: 700;
   letter-spacing: 0.6px;
   text-transform: uppercase;
 }
@@ -201,10 +200,7 @@ button:hover {
     -webkit-print-color-adjust: exact; /* Chrome, Safari, Edge */
   }
 
-  .accordion::after {
-    display: none;
-  }
-
+  .accordion::after,
   #print {
     display: none;
   }

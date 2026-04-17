@@ -54,3 +54,9 @@ if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark");
   themeIcon.textContent = "dark_mode";
 }
+
+// Encode phone number into a base64 string
+let phone = document.getElementById("phone");
+
+phone.textContent = atob("KzYwMTEtMTAxMCA5NzQ5");
+phone.setAttribute("href", `https://wa.me/${atob("NjAxMTEwMTA5NzQ5")}`);

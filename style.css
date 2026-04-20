@@ -68,7 +68,7 @@ hr {
 
 h1 {
   color: var(--primary);
-  font-size: 28px;
+  font-size: 2em;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -157,6 +157,30 @@ button {
     "opsz" 20;
 }
 
+.ribbon {
+  position: absolute;
+  top: 30px;
+  left: -40px;
+  width: 170px;
+  padding: 5px;
+  background: forestgreen;
+  color: white;
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+}
+
+.ribbon-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+}
+
 .page {
   background: var(--background);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
@@ -198,6 +222,7 @@ button {
   }
 
   .accordion::after,
+  .ribbon-wrap,
   #print {
     display: none;
   }

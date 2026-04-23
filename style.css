@@ -160,8 +160,8 @@ button {
 .ribbon {
   position: absolute;
   top: 30px;
-  left: -40px;
-  width: 170px;
+  left: -30px;
+  width: 150px;
   padding: 5px;
   background: forestgreen;
   color: white;
@@ -172,20 +172,12 @@ button {
   transform: rotate(-45deg);
 }
 
-.ribbon-wrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 150px;
-  width: 150px;
-  overflow: hidden;
-}
-
 .page {
   background: var(--background);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
   margin: auto;
   min-height: var(--page-height);
+  overflow: hidden;
   padding: var(--vertical-padding) var(--horizontal-padding);
   position: relative;
   width: var(--page-width);
@@ -222,7 +214,7 @@ button {
   }
 
   .accordion::after,
-  .ribbon-wrap,
+  .ribbon,
   #print {
     display: none;
   }

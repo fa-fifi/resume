@@ -1,6 +1,12 @@
-var accordions = document.getElementsByClassName("accordion");
+// Encode phone number into a base64 string
+let phone = document.getElementById("phone");
+
+phone.textContent = atob("KzYwMTEtMTAxMCA5NzQ5");
+phone.setAttribute("href", `https://wa.me/${atob("NjAxMTEwMTA5NzQ5")}`);
 
 // Open and close selected accordion's panel
+var accordions = document.getElementsByClassName("accordion");
+
 for (var i = 0; i < accordions.length; i++) {
   accordions[i].addEventListener("click", function () {
     this.classList.toggle("active");
@@ -39,10 +45,10 @@ window.addEventListener("afterprint", function () {
   }
 });
 
+// Toggle between light and dark mode
 var themeButton = document.getElementById("theme");
 var themeIcon = themeButton.querySelector(".material-symbols-outlined");
 
-// Toggle between light and dark mode
 themeButton.addEventListener("click", function () {
   var isDark = document.body.classList.toggle("dark");
   themeIcon.textContent = isDark ? "dark_mode" : "light_mode";
@@ -54,9 +60,3 @@ if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark");
   themeIcon.textContent = "dark_mode";
 }
-
-// Encode phone number into a base64 string
-let phone = document.getElementById("phone");
-
-phone.textContent = atob("KzYwMTEtMTAxMCA5NzQ5");
-phone.setAttribute("href", `https://wa.me/${atob("NjAxMTEwMTA5NzQ5")}`);

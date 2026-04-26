@@ -4,6 +4,12 @@ let phone = document.getElementById("phone");
 phone.textContent = atob("KzYwMTEtMTAxMCA5NzQ5");
 phone.setAttribute("href", `https://wa.me/${atob("NjAxMTEwMTA5NzQ5")}`);
 
+// Modify anchor tag attributes globally
+document.querySelectorAll("a").forEach((a) => {
+  a.target = "_blank";
+  a.rel = "noopener noreferrer";
+});
+
 // Open and close selected accordion's panel
 var accordions = document.getElementsByClassName("accordion");
 

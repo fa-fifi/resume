@@ -103,6 +103,10 @@ a {
   }
 }
 
+abbr {
+  text-decoration: none;
+}
+
 ul {
   padding-left: 16px;
 }

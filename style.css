@@ -27,8 +27,7 @@ html {
 }
 
 body {
-  background: url("images/background.jpg") center center / cover fixed
-    whitesmoke;
+  background: url("images/background.jpg") center / cover whitesmoke;
   color: var(--text);
   display: flex;
   font-family: Carlito, sans-serif;

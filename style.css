@@ -95,11 +95,13 @@ a {
   display: inline-block;
   text-decoration: none;
   transition: transform 0.3s ease;
-  &:hover {
-    color: var(--inverted-text);
+  &:hover,
+  &:focus {
     background-color: var(--primary);
-    transform: scale(1.05);
+    color: var(--inverted-text);
+    outline: none;
     padding: 0px 5px;
+    transform: scale(1.05);
   }
 }
 
@@ -126,7 +128,8 @@ button {
   justify-content: center;
   padding: 5px;
   transition: all 0.3s ease;
-  &:hover {
+  &:hover,
+  &:focus {
     background: var(--primary);
     border-color: transparent;
     color: var(--inverted-text);

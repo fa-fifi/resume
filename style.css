@@ -99,7 +99,6 @@ a {
   &:focus {
     background-color: var(--primary);
     color: var(--inverted-text);
-    outline: none;
     padding: 0px 5px;
     transform: scale(1.05);
   }
@@ -110,11 +109,10 @@ abbr {
 }
 
 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
   padding-left: 16px;
-}
-
-li + li {
-  margin-top: 1px;
 }
 
 button {

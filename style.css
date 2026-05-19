@@ -109,10 +109,11 @@ abbr {
 }
 
 ul {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
   padding-left: 16px;
+}
+
+li + li {
+  margin-top: 1px;
 }
 
 button {

@@ -1,3 +1,5 @@
+## Cover Letter
+
 Dear Hiring Manager,
 
 I was thrilled to learn about the [Position] opportunity for your company in [Location]. With my extensive experience in software development, especially with mobile applications, I am confident in my ability to contribute massively to your team. As a Malaysian citizen, I am ready to start immediately without visa restrictions.

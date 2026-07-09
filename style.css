@@ -94,9 +94,10 @@ a {
   text-decoration: none;
   transition: transform 0.3s ease;
   &:hover,
-  &:focus {
-    background-color: var(--primary);
+  &:focus-visible {
+    background: var(--primary);
     color: var(--inverted-text);
+    outline: none;
     padding: 0px 5px;
     transform: scale(1.05);
   }
@@ -127,7 +128,7 @@ button {
   padding: 5px;
   transition: all 0.3s ease;
   &:hover,
-  &:focus {
+  &:focus-visible {
     background: var(--primary);
     border-color: transparent;
     color: var(--inverted-text);

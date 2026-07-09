@@ -198,8 +198,10 @@ button {
     --vertical-padding: 16px;
   }
 
-  header {
-    padding-top: 41px;
+  .buttons {
+    position: static;
+    justify-content: center;
+    padding-top: 10px;
   }
 
   h3 {

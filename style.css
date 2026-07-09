@@ -121,7 +121,8 @@ li + li {
   margin-top: 1px;
 }
 
-button {
+button,
+.button {
   align-items: center;
   background: transparent;
   border: 1px solid var(--divider);
@@ -234,7 +235,7 @@ button {
   }
 
   #redirect {
-    display: block;
+    display: inline-flex;
   }
 
   .page {

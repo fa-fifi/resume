@@ -6,7 +6,7 @@
     <title>Ahmad Fakhri - Resume</title>
     <meta
       name="description"
-      content="A self-taught developer based in Malaysia."
+      content="A self-taught full-stack developer based in Cyberjaya, Malaysia."
     />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -19,9 +19,9 @@
     />
     <script src="script.js" defer></script>
   </head>
-  <body oncontextmenu="return false;">
+  <body>
     <div class="page">
-      <div class="ribbon">Open to work</div>
+      <div class="ribbon" role="status">Open to work</div>
       <!-- Header -->
       <header>
         <h1>Ahmad Fakhri</h1>
@@ -37,15 +37,36 @@
           >
         </address>
         <div class="buttons">
-          <button title="Switch mode" id="theme" type="button">
-            <span class="material-symbols-outlined"> light_mode </span>
+          <button
+            title="Switch mode"
+            aria-label="Toggle dark/light mode"
+            id="theme"
+            type="button"
+          >
+            <span class="material-symbols-outlined" aria-hidden="true">
+              light_mode
+            </span>
           </button>
-          <a class="button" href="https://fafifi.is-a.dev/resume" id="redirect">
+          <a
+            class="button"
+            href="https://fafifi.is-a.dev/resume"
+            id="redirect"
+            aria-label="Open full website resume in a new tab"
+          >
             &nbsp;&nbsp;Visit Website&nbsp;&nbsp;
-            <span class="material-symbols-outlined"> captive_portal </span>
+            <span class="material-symbols-outlined" aria-hidden="true">
+              captive_portal
+            </span>
           </a>
-          <button title="Print resume" id="print" type="button">
-            <span class="material-symbols-outlined"> print </span>
+          <button
+            title="Print resume"
+            aria-label="Print resume"
+            id="print"
+            type="button"
+          >
+            <span class="material-symbols-outlined" aria-hidden="true">
+              print
+            </span>
           </button>
         </div>
       </header>
@@ -53,7 +74,7 @@
       <main>
         <!-- Summary -->
         <section>
-          <h2 class="accordion active">Summary</h2>
+          <h2 class="accordion" tabindex="0" aria-expanded="true">Summary</h2>
           <div>
             <p>
               A self-taught full-stack developer with years of experience
@@ -72,7 +93,9 @@
 
         <!-- Relevant Experiences -->
         <section>
-          <h2 class="accordion active">Relevant Experiences</h2>
+          <h2 class="accordion" tabindex="0" aria-expanded="true">
+            Relevant Experiences
+          </h2>
           <div>
             <h3>
               <span
@@ -208,7 +231,7 @@
 
         <!-- Education -->
         <section>
-          <h2 class="accordion active">Education</h2>
+          <h2 class="accordion" tabindex="0" aria-expanded="true">Education</h2>
           <div>
             <h3>
               <a href="https://www.skku.edu">Sungkyunkwan University</a>
@@ -230,7 +253,9 @@
 
         <!-- Certifications -->
         <section>
-          <h2 class="accordion active">Certifications</h2>
+          <h2 class="accordion" tabindex="0" aria-expanded="true">
+            Certifications
+          </h2>
           <div>
             <h3>
               <a
@@ -256,7 +281,9 @@
 
         <!-- Additional Information -->
         <section>
-          <h2 class="accordion active">Additional Information</h2>
+          <h2 class="accordion" tabindex="0" aria-expanded="true">
+            Additional Information
+          </h2>
           <ul>
             <li>
               <strong
